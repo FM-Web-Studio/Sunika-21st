@@ -1,0 +1,95 @@
+/* ============================================================
+   DESIGN TOKENS — "Starry Night" palette
+   Deep Van Gogh blues, swirling indigo, golden stars, moon cream.
+   ============================================================ */
+:root {
+  /* night sky */
+  --night-900: #050a1f;
+  --night-800: #0a0f29;
+  --night-700: #101a3f;
+  --night-600: #18255c;
+  --night-500: #233a86;
+  --swirl: #2f57c4;
+  --swirl-soft: #4a76d4;
+
+  /* stars & moon */
+  --star: #ffd86b;
+  --star-soft: #f4c95d;
+  --star-glow: rgba(255, 216, 107, 0.55);
+  --moon: #f3efdf;
+  --cream: #e9e6d6;
+
+  /* paint accents */
+  --teal: #36c2c2;
+  --rose: #e8927c;
+
+  /* text */
+  --ink: #f3efe2;
+  --ink-soft: #c4cbe6;
+  --ink-dim: #8a93bf;
+
+  /* type */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Outfit', system-ui, sans-serif;
+
+  /* spacing rhythm */
+  --section-pad: clamp(4rem, 10vw, 8rem);
+  --maxw: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background: var(--night-900);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--star-glow);
+  color: var(--night-900);
+}
+
+/* respect users who don't want motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
