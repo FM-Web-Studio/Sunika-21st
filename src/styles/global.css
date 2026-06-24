@@ -36,6 +36,9 @@
   /* spacing rhythm */
   --section-pad: clamp(4rem, 10vw, 8rem);
   --maxw: 1100px;
+
+  /* motion */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 * {
@@ -47,6 +50,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  scroll-snap-type: y proximity;
 }
 
 body {

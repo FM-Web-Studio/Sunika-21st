@@ -76,18 +76,35 @@ export const content = {
         icon: '🖌️',
         title: 'Paint the Stars',
         text: 'Your own Starry Night canvas to take home — no skill required, just vibes.',
+        detail:
+          'Easels, canvases and a swirl of blues and golds will be waiting. We’ll guide ' +
+          'you brushstroke by brushstroke through your very own Starry Night — then you ' +
+          'take the masterpiece home as a keepsake from the night.',
       },
       {
         icon: '🧭',
         title: 'The Expedition',
         text: 'An adventure-themed quest woven through the night. Bring your sense of wonder.',
+        detail:
+          'Part game, part adventure — a series of playful challenges and surprises ' +
+          'threaded through the evening. Team up, follow the clues, and see where the ' +
+          'night takes you. Comfortable shoes recommended. 😉',
       },
       {
         icon: '✨',
         title: 'Surprises',
         text: 'A few things we can’t reveal just yet. Trust us — they’re worth showing up for.',
+        detail:
+          'Some things are better left as a surprise. All we’ll say is: there are a few ' +
+          'magical moments planned that you won’t want to miss. Keep this date sacred. ⭐',
       },
     ],
+  },
+
+  // ---- Photo gallery (images load automatically from src/gallery/) ----
+  gallery: {
+    title: 'Moments & Inspiration',
+    intro: 'Tap any image to open it up — swipe or use the arrows to explore.',
   },
 
   // ---- RSVP / closing ----
